@@ -4,10 +4,10 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-site.example.com",
+  "title": "woolkit",
+  "tagline": "woolkit bmo are cool",
+  "favicon": "https://cf.res.s.zigzag.kr/favicons/zigzag/favicon.ico",
+  "url": "https://www.naver.com",
   "baseUrl": "/",
   "organizationName": "facebook",
   "projectName": "docusaurus",
@@ -43,12 +43,15 @@ export default {
           "Interfaces",
           "Enums"
         ],
+        "sort": [
+          "source-order"
+        ],
         "sidebar": {
           "pretty": true,
           "fullNames": true
         },
         "textContentMappings": {
-          "title.indexPage": "유틸 항목 리스트",
+          "title.indexPage": "공통 사용",
           "title.memberPage": "{name}"
         },
         "parametersFormat": "table",
@@ -84,23 +87,23 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "https://cf.fe.s.zigzag.kr/common/logo/zigzag_text_logo.png",
     "navbar": {
-      "title": "My Site",
+      "title": "woolkit",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "src": "https://cf.fe.s.zigzag.kr/common/logo/zigzag_text_logo.png"
       },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Tutorial"
+          "label": "공통 함수 문서"
         },
         {
           "to": "/blog",
-          "label": "Blog",
+          "label": "woolkit 안내 페이지",
           "position": "left"
         },
         {
@@ -115,32 +118,6 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
-            }
-          ]
-        },
-        {
           "title": "More",
           "items": [
             {
@@ -154,7 +131,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © kakaostyle Corp. All rights reserved."
     },
     "prism": {
       "theme": {

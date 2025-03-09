@@ -8,4 +8,5 @@ export function load(app) {
     await new Promise((r) => setTimeout(r, 5));
     app.logger.info("Post render success");
   });
+
 }

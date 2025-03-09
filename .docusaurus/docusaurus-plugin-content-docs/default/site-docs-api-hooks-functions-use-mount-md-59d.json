@@ -1,7 +1,7 @@
 {
   "id": "api/hooks/functions/useMount",
   "title": "useMount()",
-  "description": "Parameters",
+  "description": "mount 시점만 effect 할시 사용",
   "source": "@site/docs/api/hooks/functions/useMount.md",
   "sourceDirName": "api/hooks/functions",
   "slug": "/api/hooks/functions/useMount",
