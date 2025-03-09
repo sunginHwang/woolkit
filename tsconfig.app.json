@@ -27,5 +27,6 @@
   "typedocOptions": {                // this!
     "entryPoints": ["src/index.ts"],
     "out": "docs"
-  }
+  },
+  "extends": "@docusaurus/tsconfig",
 }

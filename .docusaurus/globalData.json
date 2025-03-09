@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "api/index",
+          "docs": [
+            {
+              "id": "api/components/functions/SwitchCase",
+              "path": "/docs/api/components/functions/SwitchCase",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/components/functions/TestComp",
+              "path": "/docs/api/components/functions/TestComp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/components/index",
+              "path": "/docs/api/components/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/hooks/functions/useMount",
+              "path": "/docs/api/hooks/functions/useMount",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/hooks/index",
+              "path": "/docs/api/hooks/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "api/index",
+              "path": "/docs/api/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/api/",
+                "label": "유틸 항목 리스트"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
