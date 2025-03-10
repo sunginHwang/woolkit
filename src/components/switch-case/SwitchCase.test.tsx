@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import { SwitchCase } from "./SwitchCase";
+import '@testing-library/jest-dom';
 
 
 describe(('switch-case'), () => {
