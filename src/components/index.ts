@@ -6,6 +6,5 @@
 
  */
 
-export { TestComp } from './test-comp/TestComp';
 export { SwitchCase } from './switch-case/SwitchCase';
 

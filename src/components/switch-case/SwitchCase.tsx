@@ -2,31 +2,37 @@ import { ReactElement } from 'react';
 
 export type Key = string | number | symbol;
 
+/** The props type of {@link SwitchCase | `SwitchCase`}. */
 export interface SwitchCaseProps<Case extends Key> {
+  /** 렌더링할 값을 결정하는 키 */
   value: Case;
-  case: Partial<Record<Case, ReactElement>>;
+  /** 각 `value` 값에 해당하는 컴포넌트를 매핑하는 객체 */
+  cases: Partial<Record<Case, ReactElement>>;
+  /** 기본적으로 렌더링할 컴포넌트 (fallback) */
   default?: ReactElement;
 }
 
 /**
- * @description
- * switch 를 통해 case 마다 컴포넌트 랜더링 하는 케이스를 편하리하게 사용하기 위한 컴포넌트 입니다.
- * @param value - switch case 에 따라서 랜더링 할 컴포넌트를 결정하는 값입니다.
- * @param case - switch case 에 따라서 랜더링 할 컴포넌트를 정의하는 객체입니다.
- * @param default - switch case 에 해당되는 값이 없을 때 랜더링 할 컴포넌트 입니다. (fallback)
+ * 특정 값(`value`)에 따라 지정된 컴포넌트를 렌더링하는 컴포넌트입니다.
+ *
+ * @typeParam Case - `value`로 사용될 수 있는 키 타입입니다.
+ *
+ * @category Component
+ * @returns 해당하는 컴포넌트 또는 `default`가 없으면 `null`을 반환합니다.
+ *
  * @example
- *   <SwitchCase
- *     value={status}
- *     case={{
- *       a: <TypeA />,
- *       b: <TypeB />,
- *       c: <TypeC />,
- *     }}
- *     default={<Default />}
- *   />
- *
- *
+ * ```tsx
+ * <SwitchCase
+ *   value={status}
+ *   cases={{
+ *     a: <TypeA />,
+ *     b: <TypeB />,
+ *     c: <TypeC />,
+ *   }}
+ *   default={<Default />}
+ * />
+ * ```
  */
-export const SwitchCase = <Case extends Key>({ value, case: case_lookup, default: default_case }: SwitchCaseProps<Case>) => {
-  return case_lookup[value] ?? default_case ?? null;
+export const SwitchCase = <Case extends Key>(props: SwitchCaseProps<Case>) => {
+  return props.cases[props.value] ?? props.default ?? null;
 };
