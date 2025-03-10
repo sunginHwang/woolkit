@@ -21,8 +21,7 @@
     "docs:start": "docusaurus start",
     "docs:build": "docusaurus build",
     "test": "vitest run",
-    "changeset": "changesets init",
-    "release:package": "yarn build && changeset publish" 
+    "release:package": "yarn build && changeset publish"
   },
   "peerDependencies": {
     "react": "^19.0.0",
