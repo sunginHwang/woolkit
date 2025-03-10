@@ -19,7 +19,9 @@
     "docs": "http-server -o ./docs/index.html",
     "docs:generate": "typedoc",
     "docs:start": "docusaurus start",
-    "test": "vitest run"
+    "docs:build": "docusaurus build",
+    "test": "vitest run",
+    "changeset": "changesets init"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -34,6 +36,7 @@
     "prism-react-renderer": "^2.3.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.28.1",
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "^3.7.0",
