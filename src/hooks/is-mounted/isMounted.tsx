@@ -6,7 +6,6 @@ export const isMounted = () => {
   const [is_mounted, setIsMounted] = useState(false);
 
   useMount(() => {
-    console.log('mounted!!');
     setIsMounted(true);
   });
 

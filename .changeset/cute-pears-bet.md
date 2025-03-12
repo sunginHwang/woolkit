@@ -1,0 +1,5 @@
+---
+"woolkit": minor
+---
+
+remove log
