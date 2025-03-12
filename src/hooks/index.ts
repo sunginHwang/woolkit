@@ -6,6 +6,5 @@
 
  */
 
+export { isMounted } from "./is-mounted/isMounted";
 export { useMount } from "./use-mount/useMount";
-
-
