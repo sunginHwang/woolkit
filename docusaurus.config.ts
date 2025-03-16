@@ -109,7 +109,10 @@ const config: Config = {
           position: 'left',
           label: '공통 함수 문서',
         },
-        {to: '/blog', label: 'woolkit 안내 페이지', position: 'left'},
+        {to: '/setting', label: '개발세팅', position: 'left'},
+        {to: '/developer', label: '개발작성 가이드', position: 'left'},
+        {to: '/convention', label: '컨벤션', position: 'left'},
+
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',

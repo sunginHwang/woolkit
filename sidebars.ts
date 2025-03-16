@@ -29,6 +29,23 @@ const sidebars: SidebarsConfig = {
     },
   ],
    */
+  sidebar: [
+    {
+      type: "link",
+      label: "Convention",
+      href: "/convention", // `docusaurus/pages/convention.mdx`
+    },
+    {
+      type: "link",
+      label: "Guide",
+      href: "/guide", // `docusaurus/pages/guide.mdx`
+    },
+    {
+      type: "link",
+      label: "Setting",
+      href: "/setting", // `docusaurus/pages/setting.mdx`
+    },
+  ],
 };
 
 export default sidebars;
