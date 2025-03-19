@@ -33,6 +33,7 @@
     "@docusaurus/preset-classic": "3.7.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "lodash-es": "^4.17.21",
     "prism-react-renderer": "^2.3.0"
   },
   "devDependencies": {
@@ -44,6 +45,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
